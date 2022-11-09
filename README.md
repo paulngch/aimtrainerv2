@@ -35,20 +35,20 @@ The variations of "scenarios"(game-modes) can now be tailor-made and altered to 
 
 ## Main Concept
 
-Target(s) (number can be selected by user/player) will appear at random within an invisible grid that will stay on-screen until it is "shot-at" (clicked), which will cause another target to take its place at another random spot on the grid. Players will need to utilise and train their mouse "flicking" to achieve better results.(Mouse-flicking: Moving from point-to-point in the screen, in the shortest amount of time, and as accurately as possible) 
+Target(s) (number can be selected by user/player) will appear at random within an invisible grid that will stay on-screen until it is "shot-at" (clicked), which will cause another target to take its place at another random spot on the grid. Players will need to utilise and train their mouse "flicking" to achieve better results.(Mouse-flicking: Moving from point-to-point in the screen, in the shortest amount of time, and as accurately as possible)
 
 <br>
 
 ## Deployment
 
-The game is deployed on GitHub pages, and you can play the game here: https://aim-trainer-phi.vercel.app/
+The game is deployed on GitHub pages, and you can play the game here: https://aimtrainerv2.vercel.app/
 
 <br>
 
 ## How To Play
 
 Instructions:
-The goal of the game is to hit as many targets as possible within the time allocated. The player must move their mouse/cursor from point to point not only with precision and speed.
+The goal of the game is to hit as many targets as possible within the time allocated. The player must move their mouse/cursor from point to point not only with precision but also speed.
 
 As this game requires an intense amount of concentration for sustained periods, it will undoubtely get more challenging as the timer continues on. Focus, and on-the-fly planning will be required. Peripheral vision and reaction speed will also be tested.
 
@@ -60,11 +60,11 @@ In order to facilitate the writing of the code and simplify the thought process,
 
 - [x] **Step 1:** Generate the Invisible Grid
 - [x] **Step 2:** Generate the Targets within the grid
-- [x] **Step 3:** Game Logic (disappear on-click and randomise appearance) 
+- [x] **Step 3:** Game Logic (disappear on-click and randomise appearance)
 - [x] **Step 4:** Create a system to calculate the accuracy and speed of the player
 - [x] **Step 5:** Generate a running timer, and up-to-date accuracy counter for displaying during the game
 - [x] **Step 6** (Stretch Goal): Create options for changing/limiting the number of targets.
-<br>
+      <br>
 
 ## Key Learnings
 
