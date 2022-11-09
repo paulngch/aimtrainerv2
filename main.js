@@ -169,6 +169,12 @@ const clickDots = () => {
     });
   };
 
+  const animateDot1 = () => {
+    $("#game").on("click", `.dot1`, () => {
+      $(".dot1").appendTo;
+    });
+  };
+
   const clickDot2 = () => {
     //upon clicking of .dot1
     $("#game").on("click", `.dot2`, () => {
@@ -220,6 +226,7 @@ const accuracyCounter = () => {
     $("#game").on("click", `.dot`, () => {
       gameStats.targetClicks += 1;
       //checking total clicks, can remove later
+      $("#numberOfHits").html(`${gameStats.targetClicks} hits`);
       console.log(gameStats.targetClicks + " DOT clicks");
     });
   };
