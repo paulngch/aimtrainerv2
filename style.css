@@ -385,12 +385,11 @@ body {
 }
 
 #targetMessage {
-font-size: 20px;
+  font-size: 20px;
 }
 
 #titleText {
   font-size: 85px;
-  margin-top: 20%;
 }
 
 #readyButton {
