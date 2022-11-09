@@ -45,6 +45,7 @@ const setupPageButtonHandlers = () => {
   });
 
   $("#readyButton").on("click", () => {
+    $("#numberOfHits").html(``);
     const totalClickZero = () => {
       gameStats.totalClicks = 0;
     };
@@ -81,7 +82,7 @@ const setupPageButtonHandlers = () => {
     $("#resultAccuracy").hide();
     $(".manualResult").show();
     $("#resultSpeed").hide();
-    $("numberOfHits").show()
+    $("numberOfHits").show();
     $("#manualEndSpeed").show();
 
     $("#manualEndAcc").html(lastGameStats.manualEndAccuracy + "%");
