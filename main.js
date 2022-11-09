@@ -2,7 +2,7 @@ import $, { ready } from "jquery";
 
 let gameMasterDuration = {
   ready: 3,
-  gameTime: 30,
+  gameTime: 5,
 };
 
 let gameStats = {
@@ -56,6 +56,7 @@ const setupPageButtonHandlers = () => {
     $("#resultAccuracy").show();
     $("#manualEndSpeed").hide();
     $("#resultSpeed").show();
+    $("numberOfHits").show();
     gamePage.page = "game";
     renderPage();
   });
@@ -80,7 +81,9 @@ const setupPageButtonHandlers = () => {
     $("#resultAccuracy").hide();
     $(".manualResult").show();
     $("#resultSpeed").hide();
+    $("numberOfHits").show()
     $("#manualEndSpeed").show();
+
     $("#manualEndAcc").html(lastGameStats.manualEndAccuracy + "%");
     console.log(gameStats.targetClicks + "GAME STATS TARGET CLICKS");
 
