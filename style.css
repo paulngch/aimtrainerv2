@@ -59,6 +59,10 @@ h1 {
   width: 100%;
 }
 
+h4 {
+  text-align: center;
+}
+
 /* 
 #app {
   max-width: 1280px;
@@ -314,7 +318,7 @@ body {
 .dot1 {
   height: 100%;
   width: 100%;
-  background-color: rgb(29, 23, 10);
+  background-color: orange;
   border-radius: 50%;
   display: inline-block;
 }
@@ -378,4 +382,17 @@ body {
   margin: 0px 20px 0px 20px;
   justify-content: space-evenly;
   padding: 20 px 8px;
+}
+
+#targetMessage {
+font-size: 20px;
+}
+
+#titleText {
+  font-size: 85px;
+  margin-top: 20%;
+}
+
+#readyButton {
+  margin-top: 20%;
 }

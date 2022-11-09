@@ -2,7 +2,7 @@ import $, { ready } from "jquery";
 
 let gameMasterDuration = {
   ready: 3,
-  gameTime: 20,
+  gameTime: 5,
 };
 
 let gameStats = {
@@ -149,7 +149,6 @@ const randDotGenerator = () => {
       .addClass("dot");
     // .attr("id", `dot${i + 1}`)
     $dotX.appendTo(`.item${randDotArray[i]}`);
-
   }
 };
 
@@ -212,19 +211,17 @@ const accuracyCounter = () => {
     window.addEventListener("click", function (event) {
       gameStats.totalClicks += 1;
       // checking total clicks, can remove later
-      console.log(gameStats.totalClicks + "totalclicks");
+      console.log(gameStats.totalClicks + "TOTAL clicks");
       lastGameStats.totalClicks = gameStats.totalClicks - 1;
       //checking total.Clicks-1 can remove later
-      console.log(lastGameStats.totalClicks + "LAST GAME CLICKS");
+      console.log(lastGameStats.totalClicks + "TOTAL clicks - last game");
     });
   };
   const clickCounterTarget = () => {
-    gameStats.targetClicks = 0;
-    let $dot = $(".dot");
-    $dot.on("click", () => {
+    $("#game").on("click", `.dot`, () => {
       gameStats.targetClicks += 1;
       //checking total clicks, can remove later
-      console.log(gameStats.targetClicks + "dotclicks");
+      console.log(gameStats.targetClicks + " DOT clicks");
     });
   };
   clickCounter();
@@ -250,14 +247,6 @@ const accuracyCounter = () => {
   //=================================================
   //On clicking of readyButton, disable mouse event... enable mouseevent X seconds later when ready countdown finishes
   //=================================================
-  // $("#readyButton").on("click", () => {
-  //   pointerStatus(0);
-  //   setTimeout(function () {
-  //     pointerStatus(1);
-  //     console.log("pointerEvent AUTO");
-  //   }, (gameStats.ready + 1) * 1000);
-  // });
-
   $("#readyButton").on("click", () => {
     pointerStatus(0);
     setTimeout(function () {
@@ -293,25 +282,26 @@ const timerStart = () => {
     gameStats.targetClicks = 0;
     gameStats.accuracy = 100;
     let currentCountUp = -1;
+
     const downloadTimer = setInterval(function () {
       if (readyTime <= 0) {
         clearInterval(downloadTimer);
-
         $("#countdown").html("");
       } else {
         $("#countdown").html(`${readyTime}`);
       }
       readyTime -= 1;
     }, 1000);
+
     setTimeout(function () {
       const downloadGameTimer = setInterval(function () {
         if (gameTime <= 0) {
           clearInterval(downloadGameTimer);
-
           $("#gameTime").html("0");
         } else {
           $("#gameTime").html(`${gameTime}`);
         }
+
         currentCountUp += 1;
         gameTime -= 1;
         lastGameStats.elapsedGameTime = currentCountUp;
