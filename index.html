@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aim Trainer - Target Practice</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <!--========Main Page========-->
+    <div id="main" class="page">
+      <!-- <h1> -->
+        Aim-Train<br /><br />
+        <button type="button" id="startButton">Start Game</button><br/>
+      <!-- </h1> -->
+      <!--========Number of Targets Buttons========-->
+      <div class="targetNumberSelector" class = "page">
+        <!-- <h1> -->
+          <button type="button" id="oneTarget" class="targetNumberSelector">
+            1 Target
+          </button>
+          <br />
+          <button type="button" id="twoTargets" class="targetNumberSelector">
+            2 Target
+          </button>
+          <br />
+          <button type="button" id="threeTargets" class="targetNumberSelector">
+            3 Target
+          </button>
+        <!-- </h1> -->
+      </div>
+    </div>
+    <!--========Ready Button========-->
+    <div id="ready" class="page">
+      <h1><button type="button" id="readyButton">Ready</button></h1>
+    </div>
+    <!--========CONTAINER / Game Page========-->
+    <div id="game" class="container page">
+      <div id="countdown"></div>
+      <div id="accuracy">
+        Acc: <span id="accuracySpan">-</span><br /><span id="gameTime"></span>
+      </div>
+      <!--========End Button========-->
+      <div id="end">
+        <h1><button type="button" id="endButton">End</button></h1>
+      </div>
+      <div class="item item1 item1-1"></div>
+      <span id="dot1" class="dot"></span>
+      <div class="item item2 item1-2"></div>
+      <div class="item item3 item1-3"></div>
+      <div class="item item4 item1-4"></div>
+      <div class="item item5 item1-5"></div>
+      <div class="item item6 item1-6"></div>
+      <div class="item item7 item2-1"></div>
+      <div class="item item8 item2-2"></div>
+      <div class="item item9 item2-3"></div>
+      <div class="item item10 item2-4"></div>
+      <div class="item item11 item2-5"></div>
+      <div class="item item12 item2-6"></div>
+      <div class="item item13 item3-1"></div>
+      <div class="item item14 item3-2"></div>
+      <div class="item item15 item3-3"></div>
+      <div class="item item16 item3-4"></div>
+      <div class="item item17 item3-5"></div>
+      <div class="item item18 item3-6"></div>
+      <div class="item item19 item4-1"></div>
+      <div class="item item20 item4-2"></div>
+      <div class="item item21 item4-3"></div>
+      <div class="item item22 item4-4"></div>
+      <div class="item item23 item4-5"></div>
+      <div class="item item24 item4-6"></div>
+      <div class="item item25 item5-1"></div>
+      <div class="item item26 item5-2"></div>
+      <div class="item item27 item5-3"></div>
+      <div class="item item28 item5-4"></div>
+      <div class="item item29 item5-5"></div>
+      <div class="item item30 item5-6"></div>
+    </div>
+    <!--========Main Menu Button & Play Again Button========-->
+    <div id="result" class="page">
+      <h1>
+        <span class="manualResult">[Game did not Finish]<br /></span> Accuracy:
+        <span id="resultAccuracy"></span
+        ><span id="manualEndAcc" class="manualResult"></span><br />Speed:
+        <span id="resultSpeed"></span
+        ><span id="manualEndSpeed" class="manualResult"></span><br /><button
+          type="button"
+          id="mainMenuFromLast"
+        >
+          Main Menu</button
+        ><br /><button type="button" id="playAgainFromLast">Play Again</button>
+      </h1>
+    </div>
+  </body>
+</html>
