@@ -206,8 +206,7 @@ const clickDots = () => {
 const accuracyCounter = () => {
   const clickCounter = () => {
     gameStats.totalClicks = 0;
-    //Adding event listener for window (so wherever the user clicks on the window will be counted, not just the body)
-    //DON'T know how to reference "window" in jquery
+    //Adding event listener for window (so wherever the user clicks on the window will be counted, not just the body
     window.addEventListener("click", function (event) {
       gameStats.totalClicks += 1;
       // checking total clicks, can remove later
