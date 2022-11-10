@@ -364,9 +364,3 @@ clickDots();
 targetSelector();
 accuracyCounter();
 main();
-
-//Things to do on Monday
-//fix lastgamestats.accuracy if need
-//colour picker
-//audio
-//crosshair
