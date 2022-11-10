@@ -2,7 +2,7 @@ import $, { ready } from "jquery";
 
 let gameMasterDuration = {
   ready: 3,
-  gameTime: 5,
+  gameTime: 30,
 };
 
 let gameStats = {
