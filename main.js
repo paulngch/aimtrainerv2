@@ -45,7 +45,10 @@ const setupPageButtonHandlers = () => {
   });
 
   $("#readyButton").on("click", () => {
+    //clear all hit counters as well
     $("#numberOfHits").html(``);
+    $("#manualEndSpeed").html(``);
+    $("#resultSpeed").html(``);
     const totalClickZero = () => {
       gameStats.totalClicks = 0;
     };
